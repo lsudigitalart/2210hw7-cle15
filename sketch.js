@@ -17,14 +17,15 @@ function setup(){
   y = height/2
   //mmusic = loadSound(music/Alan Walker - Fade [NCS Release].mp3);
   //mySound.play(music/Alan Walker - Fade [NCS Release].mp3);
-  mySound.loop();
+  //mySound.loop();
   ellipseMode(RADIUS);
   //or mySound.loop just loop
+  //p5 amplitude
 }
 function draw(){
 background(0);
 x += random(-speed2, speed2);
-y += random(-speed2, speed2)
+y += random(-speed2, speed2);
 
 ellipse(x, y, diameter, diameter);
 x1 += speed;
