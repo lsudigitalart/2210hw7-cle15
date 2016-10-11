@@ -5,7 +5,7 @@ var slot = 100;
 var slot1 =10000;
 var radius = 50;
 var x1 = - radius;
-var speed = .75;
+var speed = 6;
 var speed2 = 3;
 var speed3 = 4;
 var diameter = 30;
@@ -28,6 +28,7 @@ function setup(){
 function draw(){
 background(0);
 var time = millis();
+line(20,120,30,50)
 if(time < slot)
 {
 x += random(-speed2, speed2);
@@ -44,6 +45,6 @@ x1 += speed;
 if(x > width+radius){
   x= -radius;
 }
-arc(x1, 60 , radius, radius, 0.7, 6);
-  //x1 = speed - x * ;
+//arc(x1, 40 , radius, radius, 0.7, 6);
+  x1 = speed - x * ;
 }
