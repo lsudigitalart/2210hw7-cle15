@@ -16,7 +16,7 @@ var Sound;
 //var direction = 1;
 function preload()
 {
-  //Sound = loadSound("music/Alan Walker - Fade [NCS Release].mp3");
+  Sound = loadSound("music/Alan Walker - Fade [NCS Release].mp3");
 }
 function setup(){
   //what is wrong with the server connecting to this...
@@ -35,7 +35,7 @@ function setup(){
 function draw(){
 background(0);
 var time = millis();
-//Sound.play();
+Sound.play();
 rectMode(CENTER);
 ellipseMode(RADIUS);
 translate(55,20);
