@@ -68,7 +68,10 @@ else if((time>24000) && (time<80000))
   {
     ellipse(random(width), 200, 50, 50);
   }
+  Sound.pause();
 }
+}
+/*
 else if((time>80000) && (time<120000))
 {
   //scale(b);
