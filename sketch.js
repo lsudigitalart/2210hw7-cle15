@@ -16,7 +16,7 @@ var Sound;
 //var direction = 1;
 function preload()
 {
-  //Sound = loadSound("music/Alan Walker - Fade [NCS Release].mp3");
+  Sound = loadSound("music/Alan Walker - Fade [NCS Release].mp3");
 }
 function setup(){
   //what is wrong with the server connecting to this...
@@ -35,7 +35,7 @@ function setup(){
 function draw(){
 background(0);
 var time = millis();
-//Sound.play();
+Sound.play();
 rectMode(CENTER);
 ellipseMode(RADIUS);
 translate(55,20);
@@ -61,6 +61,8 @@ else if((time>24000) && (time<80000))
 {
   frameRate(3);
   fill(125,200,40);
+  rect(320,200, 400,400);
+  fill(100,40,8);
   rect(random(width), random(height), 10, 5);
   ellipse(random(width), random(height), 20,20);
   ellipse(random(width), random(height), 10,35);
@@ -68,7 +70,7 @@ else if((time>24000) && (time<80000))
   {
     ellipse(random(width), 200, 50, 50);
   }
-  Sound.pause();
+  //Sound.pause();
 }
 }
 /*
