@@ -3,6 +3,8 @@
 //var slot1 =500;
 //var radius = 50;
 //var x1 = - radius;
+var r = 0;
+var t = 0;
 var xspeed = 6;
 var yspeed = 3;
 //var speed3 = 4;
@@ -14,7 +16,7 @@ var Sound;
 //var direction = 1;
 function preload()
 {
-  Sound = loadSound("music/Alan Walker - Fade [NCS Release].mp3");
+  //Sound = loadSound("music/Alan Walker - Fade [NCS Release].mp3");
 }
 function setup(){
   //what is wrong with the server connecting to this...
@@ -33,7 +35,7 @@ function setup(){
 function draw(){
 background(0);
 var time = millis();
-Sound.play();
+//Sound.play();
 rectMode(CENTER);
 ellipseMode(RADIUS);
 translate(55,20);
@@ -87,6 +89,27 @@ else if((time>120000) && (time<270000))
   rect(random(width), random(height), 70,70);
   rect(random(width), random(height), 40,55);
 }
+else if(time>270000)
+{
+  Sound.pause();
+}
+rotate(r);
+}
+/*if(t > 300) {
+  //  shine = 0;
+    //ly = random(0, height/10);
+    ty = random(height/2);
+  }
+
+  if (t < -200) {
+    shine = 1;
+    ly = random(0, height/10);
+    ty = random(height/2);
+  }
+  if(shine == 1) {
+  sz++;
+} else {
+  sz--;
 }
 /*function mouseIsPressed{
 background(0);
